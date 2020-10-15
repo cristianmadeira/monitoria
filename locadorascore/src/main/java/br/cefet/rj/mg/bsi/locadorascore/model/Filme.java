@@ -5,6 +5,8 @@
  */
 package br.cefet.rj.mg.bsi.locadorascore.model;
 
+import java.util.List;
+
 /**
  *
  * @author cristian
@@ -16,7 +18,8 @@ public class Filme {
     private String titulo;
     private String duracao;
     private String genero;
-
+    private List<Ator> atores;
+    
     public int getId() {
         return id;
     }
@@ -57,6 +60,15 @@ public class Filme {
         this.genero = genero;
     }
 
+    public List<Ator> getAtores() {
+        return atores;
+    }
+
+    public void setAtores(List<Ator> atores) {
+        this.atores = atores;
+    }
+
+    
     
     
     
