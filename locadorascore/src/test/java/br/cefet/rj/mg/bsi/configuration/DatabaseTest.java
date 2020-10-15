@@ -5,41 +5,21 @@
  */
 package br.cefet.rj.mg.bsi.configuration;
 
-import br.cefet.rj.mg.bsi.locadoracore.exception.DAOException;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 import java.io.IOException;
-import org.junit.jupiter.api.AfterEach;
-import org.junit.jupiter.api.AfterAll;
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.BeforeAll;
+
 import org.junit.jupiter.api.Test;
-import static org.junit.jupiter.api.Assertions.*;
+
+import br.cefet.rj.mg.bsi.locadoracore.exception.DAOException;
 
 /**
  *
- * @author cristian
+ * @author Cristian Pereira
  */
 public class DatabaseTest {
 
-    public DatabaseTest() {
-    }
-
-    @BeforeAll
-    public static void setUpClass() {
-    }
-
-    @AfterAll
-    public static void tearDownClass() {
-    }
-
-    @BeforeEach
-    public void setUp() {
-    }
-
-    @AfterEach
-    public void tearDown() {
-    }
-
-    /**
+	/**
      * Test of getURL method, of class Database.
      *
      * @throws java.lang.Exception
@@ -58,9 +38,9 @@ public class DatabaseTest {
      * @throws java.io.IOException
      */
     @Test
-    public void testGetUSERNAME() throws DAOException, IOException {
+    public void testGetUsername() throws DAOException, IOException {
         String expected = "root";
-        String result = Database.getKeyValue("DATABASE_USERNAME");
+        String result = Database.getUsername();
         assertEquals(expected, result);
     }
 
@@ -71,9 +51,9 @@ public class DatabaseTest {
      * @throws java.io.IOException
      */
     @Test
-    public void testGetPASSWORD() throws DAOException, IOException {
+    public void testGetPassword() throws DAOException, IOException {
         String expected = "mariadb";
-        String result = Database.getKeyValue("DATABASE_PASSWORD");
+        String result = Database.getPassword();
         assertEquals(expected, result);
 
     }

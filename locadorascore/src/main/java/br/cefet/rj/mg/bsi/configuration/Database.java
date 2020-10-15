@@ -5,16 +5,13 @@
  */
 package br.cefet.rj.mg.bsi.configuration;
 
-import br.cefet.rj.mg.bsi.locadoracore.exception.DAOException;
-import java.io.BufferedInputStream;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
-import java.io.InputStream;
 import java.util.Properties;
-import java.util.logging.Level;
-import java.util.logging.Logger;
+
+import br.cefet.rj.mg.bsi.locadoracore.exception.DAOException;
 
 /**
  *
@@ -26,14 +23,19 @@ public class Database {
 
     public static String getURL() throws DAOException {
         try {
-            return String.format("jdbc:mysql://%s:%s/%s",getKeyValue("DATABASE_HOST"),
+        	return String.format("jdbc:mysql://%s:%s/%s",getKeyValue("DATABASE_HOST"),
                     getKeyValue("DATABASE_PORT"),getKeyValue("DATABASE_NAME"));
         } catch (IOException ex) {
             throw new DAOException("URL was not found ");
         }
         
     }
-
+    public static String getUsername() throws DAOException, FileNotFoundException, IOException {
+    	return getKeyValue("DATABASE_USERNAME");
+	}
+    public static String getPassword() throws FileNotFoundException, IOException {
+    	return getKeyValue("DATABASE_PASSWORD");
+    }
     
     
     public static String getKeyValue(String key) throws FileNotFoundException, IOException{

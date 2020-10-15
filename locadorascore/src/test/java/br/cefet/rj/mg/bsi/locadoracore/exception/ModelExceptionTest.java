@@ -5,12 +5,9 @@
  */
 package br.cefet.rj.mg.bsi.locadoracore.exception;
 
-import org.junit.jupiter.api.AfterEach;
-import org.junit.jupiter.api.AfterAll;
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.BeforeAll;
+import static org.junit.jupiter.api.Assertions.assertTrue;
+
 import org.junit.jupiter.api.Test;
-import static org.junit.jupiter.api.Assertions.*;
 
 /**
  *
@@ -18,26 +15,7 @@ import static org.junit.jupiter.api.Assertions.*;
  */
 public class ModelExceptionTest {
     
-    public ModelExceptionTest() {
-    }
-    
-    @BeforeAll
-    public static void setUpClass() {
-    }
-    
-    @AfterAll
-    public static void tearDownClass() {
-    }
-    
-    @BeforeEach
-    public void setUp() {
-    }
-    
-    @AfterEach
-    public void tearDown() {
-    }
-
-    @Test
+	@Test
     public void testModelException(){
        String expected = "No match for customer id 1";
        String result = new ModelException("No match for customer id 1").getMessage();

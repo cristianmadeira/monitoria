@@ -18,27 +18,7 @@ import static org.junit.jupiter.api.Assertions.*;
  * @author cristian
  */
 public class FilmeTest {
-    
-    public FilmeTest() {
-    }
-    
-    @BeforeAll
-    public static void setUpClass() {
-    }
-    
-    @AfterAll
-    public static void tearDownClass() {
-    }
-    
-    @BeforeEach
-    public void setUp() {
-    }
-    
-    @AfterEach
-    public void tearDown() {
-    }
-
-    @Test
+	@Test
     public void testIfClassExists() {
       Filme filme = new Filme();
         assertNotNull(filme);
