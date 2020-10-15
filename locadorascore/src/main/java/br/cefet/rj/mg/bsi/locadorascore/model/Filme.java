@@ -11,7 +11,7 @@ import java.util.List;
  *
  * @author cristian
  */
-public class Filme {
+public class Filme extends BaseModel{
     
     private int id;
     private String sinopse;
@@ -67,6 +67,8 @@ public class Filme {
     public void setAtores(List<Ator> atores) {
         this.atores = atores;
     }
+
+    
 
     
     

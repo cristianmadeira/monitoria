@@ -6,6 +6,7 @@
 package br.cefet.rj.mg.bsi.locadorascore.model;
 
 import br.cefet.rj.mg.bsi.locadoracore.exception.ModelException;
+import java.util.List;
 
 /**
  *
@@ -13,6 +14,8 @@ import br.cefet.rj.mg.bsi.locadoracore.exception.ModelException;
  */
 public abstract class BaseModel implements Model{
 
+    
+    
     @Override
     public boolean save() throws ModelException {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
@@ -25,6 +28,10 @@ public abstract class BaseModel implements Model{
 
     @Override
     public boolean delete(int id) throws ModelException {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+    @Override
+    public List findById(int id) throws ModelException {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     
