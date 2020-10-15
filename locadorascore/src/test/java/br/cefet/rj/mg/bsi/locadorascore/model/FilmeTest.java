@@ -5,6 +5,7 @@
  */
 package br.cefet.rj.mg.bsi.locadorascore.model;
 
+import br.cefet.rj.mg.bsi.locadoracore.exception.ModelException;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeEach;
@@ -41,6 +42,15 @@ public class FilmeTest {
     public void testIfClassExists() {
       Filme filme = new Filme();
         assertNotNull(filme);
+    }
+    
+    @Test
+    public void testSave() throws ModelException{
+        Filme filme = new Filme();
+        
+        boolean result=filme.save();
+        
+        assertTrue(result);
     }
     
 }
