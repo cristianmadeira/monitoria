@@ -4,14 +4,15 @@
  * and open the template in the editor.
  */
 package br.cefet.rj.mg.bsi.locadorascore.model;
-
+import br.cefet.rj.mg.bsi.locadoracore.exception.ModelException;
 /**
  *
  * @author cristian
  */
 public interface Model {
-    public boolean save();
-    public boolean update();
-    public boolean delete(int id);
+    
+    public boolean save() throws ModelException;
+    public boolean update() throws ModelException;
+    public boolean delete(int id) throws ModelException;
     
 }
