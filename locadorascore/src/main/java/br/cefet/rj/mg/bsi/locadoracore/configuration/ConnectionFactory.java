@@ -7,7 +7,10 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 
 import br.cefet.rj.mg.bsi.locadoracore.exception.DAOException;
-
+/*
+ *@author Cristian Madeira de Souza Pereira
+ *Esta classe realiza a conexão com banco de dados usando singleton 
+ */
 public class ConnectionFactory {
 
 	private static ConnectionFactory instance = null;

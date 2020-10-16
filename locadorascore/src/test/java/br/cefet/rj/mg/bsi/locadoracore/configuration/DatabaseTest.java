@@ -7,11 +7,12 @@ package br.cefet.rj.mg.bsi.locadoracore.configuration;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
+import java.io.File;
+import java.io.FileNotFoundException;
 import java.io.IOException;
 
 import org.junit.jupiter.api.Test;
 
-import br.cefet.rj.mg.bsi.locadoracore.configuration.Database;
 import br.cefet.rj.mg.bsi.locadoracore.exception.DAOException;
 
 /**
@@ -70,6 +71,19 @@ public class DatabaseTest {
         String result = Database.getKeyValue("DATABASE_NAME");
         assertEquals(expected, result);
 
+    }
+    /**
+     * Test of getKeyValue(String key, File file) method, of class Database.
+     * 
+     * @throws FileNotFoundException
+     * @throws IOException
+     */
+    @Test
+    public void testGetUsernameWithSomeFile() throws FileNotFoundException, IOException {
+    	File file = new File("db.properties");
+    	String expected = "root";
+    	String result = Database.getKeyValue("DATABASE_USERNAME", file);
+    	assertEquals(expected, result);
     }
 
 }

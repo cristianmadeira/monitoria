@@ -45,7 +45,8 @@ public abstract class BaseModel implements Model{
     public boolean delete(int id) throws ModelException {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
-    @Override
+    @SuppressWarnings("rawtypes")
+	@Override
     public List findById(int id) throws ModelException {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }

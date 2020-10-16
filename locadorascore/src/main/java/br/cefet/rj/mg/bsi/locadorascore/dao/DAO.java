@@ -18,6 +18,6 @@ public interface DAO<k> {
     public boolean insert(k o) throws DAOException;
     public boolean update(k o) throws DAOException;
     public boolean delete(int id) throws DAOException;
-    public List findById(int id) throws DAOException;
+    public List<k> findById(int id) throws DAOException;
     
 }

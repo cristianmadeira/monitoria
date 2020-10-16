@@ -2,9 +2,6 @@ package br.cefet.rj.mg.bsi.locadoracore.configuration;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertFalse;
-import static org.junit.jupiter.api.Assertions.assertNotEquals;
-import static org.junit.jupiter.api.Assertions.assertTrue;
-import static org.junit.jupiter.api.Assertions.fail;
 
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -13,7 +10,6 @@ import java.sql.SQLException;
 
 import org.junit.jupiter.api.Test;
 
-import br.cefet.rj.mg.bsi.locadoracore.configuration.ConnectionFactory;
 import br.cefet.rj.mg.bsi.locadoracore.exception.DAOException;
 
 class ConnectionFactoryTest {

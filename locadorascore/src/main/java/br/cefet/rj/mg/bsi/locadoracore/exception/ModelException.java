@@ -11,7 +11,12 @@ package br.cefet.rj.mg.bsi.locadoracore.exception;
  */
 public class ModelException extends Exception{
     
-    public ModelException(String message){
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
+	public ModelException(String message){
         super(message);
     }
     

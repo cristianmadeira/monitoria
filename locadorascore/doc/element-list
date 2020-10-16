@@ -1,0 +1,5 @@
+br.cefet.rj.mg.bsi.locadoracore.configuration
+br.cefet.rj.mg.bsi.locadoracore.controller
+br.cefet.rj.mg.bsi.locadoracore.exception
+br.cefet.rj.mg.bsi.locadorascore.dao
+br.cefet.rj.mg.bsi.locadorascore.model

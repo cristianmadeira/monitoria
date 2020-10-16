@@ -4,7 +4,6 @@
  * and open the template in the editor.
  */
 package br.cefet.rj.mg.bsi.locadorascore.model;
-import br.cefet.rj.mg.bsi.locadoracore.exception.DAOException;
 import br.cefet.rj.mg.bsi.locadoracore.exception.ModelException;
 import java.util.List;
 /**
@@ -16,7 +15,8 @@ public interface Model{
     public boolean save() throws ModelException;
     public boolean update() throws ModelException;
     public boolean delete(int id) throws ModelException;
-    public List findById(int id) throws ModelException;
+    @SuppressWarnings("rawtypes")
+	public List findById(int id) throws ModelException;
     
     
 }
