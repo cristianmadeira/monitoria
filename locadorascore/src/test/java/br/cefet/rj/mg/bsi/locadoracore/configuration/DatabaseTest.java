@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package br.cefet.rj.mg.bsi.configuration;
+package br.cefet.rj.mg.bsi.locadoracore.configuration;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
@@ -11,6 +11,7 @@ import java.io.IOException;
 
 import org.junit.jupiter.api.Test;
 
+import br.cefet.rj.mg.bsi.locadoracore.configuration.Database;
 import br.cefet.rj.mg.bsi.locadoracore.exception.DAOException;
 
 /**

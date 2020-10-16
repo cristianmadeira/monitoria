@@ -1,4 +1,4 @@
-package br.cefet.rj.mg.bsi.configuration;
+package br.cefet.rj.mg.bsi.locadoracore.configuration;
 
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -25,7 +25,7 @@ public class ConnectionFactory {
 
 	
 	public Connection getConn() throws FileNotFoundException, SQLException, DAOException, IOException {
-		if(conn == null)
+		if(conn == null || conn.isClosed())
 			conn = DriverManager.getConnection(Database.getURL(),Database.getUsername(),Database.getPassword());
 		return conn;
 	}

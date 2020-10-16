@@ -5,6 +5,7 @@
  */
 package br.cefet.rj.mg.bsi.locadorascore.model;
 
+import br.cefet.rj.mg.bsi.locadoracore.exception.DAOException;
 import br.cefet.rj.mg.bsi.locadoracore.exception.ModelException;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.AfterAll;
@@ -18,18 +19,17 @@ import static org.junit.jupiter.api.Assertions.*;
  * @author cristian
  */
 public class FilmeTest {
+	
 	@Test
-    public void testIfClassExists() {
-      Filme filme = new Filme();
-        assertNotNull(filme);
-    }
-    
-    @Test
-    public void testSave() throws ModelException{
+    public void testSave() throws ModelException, DAOException{
         Filme filme = new Filme();
         
+        filme.setDuracao("120");
+		filme.setGenero("Gênero de Teste");
+		filme.setSinopse("Sinopse de Teste");
+		filme.setTitulo("Título de Teste");
+		
         boolean result=filme.save();
-        
         assertTrue(result);
     }
     

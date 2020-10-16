@@ -13,10 +13,10 @@ import java.util.List;
  *
  * @author cristian
  */
-public interface DAO {
+public interface DAO<k> {
     
-    public boolean save() throws DAOException;
-    public boolean update() throws DAOException;
+    public boolean insert(k o) throws DAOException;
+    public boolean update(k o) throws DAOException;
     public boolean delete(int id) throws DAOException;
     public List findById(int id) throws DAOException;
     

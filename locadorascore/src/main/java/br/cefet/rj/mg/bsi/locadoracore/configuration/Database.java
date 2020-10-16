@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package br.cefet.rj.mg.bsi.configuration;
+package br.cefet.rj.mg.bsi.locadoracore.configuration;
 
 import java.io.File;
 import java.io.FileInputStream;

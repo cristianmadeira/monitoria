@@ -5,7 +5,10 @@
  */
 package br.cefet.rj.mg.bsi.locadorascore.model;
 
+import br.cefet.rj.mg.bsi.locadoracore.exception.DAOException;
 import br.cefet.rj.mg.bsi.locadoracore.exception.ModelException;
+import br.cefet.rj.mg.bsi.locadorascore.dao.DAO;
+
 import java.util.List;
 
 /**
@@ -14,11 +17,23 @@ import java.util.List;
  */
 public abstract class BaseModel implements Model{
 
+    @SuppressWarnings("rawtypes")
+	private DAO dao = null;
     
+    public BaseModel(@SuppressWarnings("rawtypes") DAO dao) {
+		this.dao = dao;
+	}
     
-    @Override
+    @SuppressWarnings("unchecked")
+	@Override
     public boolean save() throws ModelException {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        try {
+        	return dao.insert(this);
+		} catch (DAOException e) {
+			throw new ModelException(String.format("%s",e.getMessage()));
+		}
+    	
+        
     }
 
     @Override
