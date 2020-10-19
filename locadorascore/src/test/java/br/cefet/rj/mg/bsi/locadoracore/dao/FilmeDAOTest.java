@@ -1,12 +1,12 @@
-package br.cefet.rj.mg.bsi.locadorascore.dao;
+package br.cefet.rj.mg.bsi.locadoracore.dao;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 import org.junit.jupiter.api.Test;
 
 import br.cefet.rj.mg.bsi.locadoracore.exception.DAOException;
 import br.cefet.rj.mg.bsi.locadoracore.exception.ModelException;
-import br.cefet.rj.mg.bsi.locadorascore.model.Filme;
+import br.cefet.rj.mg.bsi.locadoracore.model.Filme;
 
 class FilmeDAOTest {
 

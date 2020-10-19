@@ -3,11 +3,11 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package br.cefet.rj.mg.bsi.locadorascore.model;
+package br.cefet.rj.mg.bsi.locadoracore.model;
 
+import br.cefet.rj.mg.bsi.locadoracore.dao.DAO;
 import br.cefet.rj.mg.bsi.locadoracore.exception.DAOException;
 import br.cefet.rj.mg.bsi.locadoracore.exception.ModelException;
-import br.cefet.rj.mg.bsi.locadorascore.dao.DAO;
 
 import java.util.List;
 

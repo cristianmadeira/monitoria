@@ -4,7 +4,7 @@ import com.google.gson.Gson;
 
 import br.cefet.rj.mg.bsi.locadoracore.exception.DAOException;
 import br.cefet.rj.mg.bsi.locadoracore.exception.ModelException;
-import br.cefet.rj.mg.bsi.locadorascore.model.Filme;
+import br.cefet.rj.mg.bsi.locadoracore.model.Filme;
 
 public class FilmeController implements Controller {
 

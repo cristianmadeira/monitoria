@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package br.cefet.rj.mg.bsi.locadorascore.model;
+package br.cefet.rj.mg.bsi.locadoracore.model;
 import br.cefet.rj.mg.bsi.locadoracore.exception.ModelException;
 import java.util.List;
 /**

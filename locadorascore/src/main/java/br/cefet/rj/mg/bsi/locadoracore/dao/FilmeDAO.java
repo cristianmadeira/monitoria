@@ -1,4 +1,4 @@
-package br.cefet.rj.mg.bsi.locadorascore.dao;
+package br.cefet.rj.mg.bsi.locadoracore.dao;
 
 import java.io.IOException;
 import java.sql.Connection;
@@ -9,7 +9,7 @@ import java.util.List;
 import br.cefet.rj.mg.bsi.locadoracore.configuration.ConnectionFactory;
 import br.cefet.rj.mg.bsi.locadoracore.exception.DAOException;
 import br.cefet.rj.mg.bsi.locadoracore.exception.ModelException;
-import br.cefet.rj.mg.bsi.locadorascore.model.Filme;
+import br.cefet.rj.mg.bsi.locadoracore.model.Filme;
 
 public class FilmeDAO implements DAO<Filme> {
 
